@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <title>Registro de Platos</title>
+</head>
+
+<body style="background-color: green;">
+    <center>
+        <h1>Registro de Platos</h1>
+        <div id="content">
+            <form name="adm" id="adm" method="POST" action="../php/guardarplato.php" enctype="multipart/form-data">
+                <table style="text-align: right;" border="4">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <label>Nombre del plato: </label>
+                                <input name="nomplato" id="nomplato" type="text" maxlength="50" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Ingredientes: </label>
+                                <input name="ing" id="ing" type="text" maxlength="1000" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Costo: </label>
+                                <input name="prec" id="prec" type="number" maxlength="10">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Foto del plato: </label>
+                                <input name="fotopl" id="fotopl" type="file" required>
+                            </td>
+                        </tr>
+                        <tr style="text-align: center;">
+                            <td>
+                                <input name="guar" id="guar" type="submit" value="Regitrado de administrador">
+                                <a href="../index.php"><input name="vol" id="vol" type="button" value="Volver"></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </center>
+</body>
+
+</html>
